@@ -156,7 +156,38 @@
         <p>Preencha o formulário ao lado e solicite sua reserva para a sessão especial de Miami Vice.</p>
 
         <div class="caixa-vazia">
-          formulário aqui
+          <form>
+          <label>Nome</label><br>
+          <input type="text" id="Nome" size="50" required><br>
+          <label>Data de Nascimento</label><br>
+          <input type="date" id="dnascimento" required><br>
+          <label>Telefone</label><br>
+          <input type="tel" id="Telefone" maxlength="11" size="50" required><br>
+          <label>Email</label><br>
+          <input type="email" id="Email" autocomplete="email" required><br>
+          <label>Quantidade de ingressos</label><br>
+          <input type="number" id="ingressos" min="1" max="6" step="1" required>
+          <fieldset>
+            <legend>Quer pipoca?</legend>
+            <label>
+              <input type="radio" name="pipoca" value="sim" required> Sim
+            </label>
+            <label>
+               <input type="radio" name="pipoca" value="nao"> Não
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Quer Bebidas?</legend>
+            <label>
+              <input type="checkbox" name="bebidas[]" value="agua"> Água
+            </label>
+            <label>
+              <input type="checkbox" name="bebidas[]" value="coca"> Coca-Cola
+            </label>
+          </fieldset>
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button><br>
+          </form>
         </div>
       </div>
     </section>
